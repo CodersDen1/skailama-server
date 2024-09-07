@@ -11,8 +11,6 @@ node_modules/
 build/
 
 # Ignore package lock file
-package-lock.json
-
 # Ignore IDE and editor specific files
 .vscode/
 .idea/
