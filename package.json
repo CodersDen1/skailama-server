@@ -2,11 +2,10 @@
   "version": "1.0.0",
   "description": "this is server created to handle the server logic for skailama assessment test",
   "main": "dist/index.js",
-  "scripts": {
-    "dev": "nodemon",
-    "prebuild": "npm install",
-    "build": "tsc -p tsconfig.json",
-    "start": "node dist/index.js"
+"scripts": {
+    "build": "tsc && npm run start",
+    "start": "node dist/index.js",
+    "dev": "nodemon"
   },
   "nodemonConfig": {
     "watch": [
