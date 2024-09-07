@@ -1,10 +1,12 @@
 {
-  "name": "server",
   "version": "1.0.0",
-  "description": "this is server created to handle the server logic for skailama assesment test",
-  "main": "index.js",
+  "description": "this is server created to handle the server logic for skailama assessment test",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "prebuild": "npm install",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js"
   },
   "nodemonConfig": {
     "watch": [
@@ -15,22 +17,5 @@
       "src/**/*.spec.ts"
     ],
     "exec": "ts-node ./src/index.ts"
-  },
-  "keywords": [
-    "node",
-    "express",
-    "typescript"
-  ],
-  "author": "Adbhut Mishra (CodersDen1)",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.21",
-    "nodemon": "^3.1.4",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
   }
 }
