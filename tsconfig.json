@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "es2020",
+      "module": "CommonJS", // Set module system to CommonJS
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "outDir": "./dist",
+      "baseUrl": "./src", // Set the base URL to the src directory
+      "paths": {
+        "@/ *": ["./ *"] // Map all "@/src/something" imports to "./something"
+      }
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+  }
